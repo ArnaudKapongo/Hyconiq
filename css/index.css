@@ -1,0 +1,467 @@
+html {
+    font-size: .625em; /* fallback IE8+ */
+    font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+  }
+
+  body {
+    font-size: 1.4em; /* base font-size is equivalent "14px" */
+}
+
+/*
+@font-face {
+    font-family: 'Avenir';
+    src: url('quadranta.eot');
+    src: url('quadranta.otf') format('truetype'),
+         url('quadranta.woff') format('woff'),
+         url('quadranta.eot?#iefix') format('embedded-opentype'),
+         url('quadranta.svg#QuadrantaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+font-family : 'Avenir' on element;
+
+*/
+
+/*
+* coleurs:
+- Rouge : #fc3b3b;
+- Jaune : #f5fc3b;
+- Vert  : #56fc3b;
+- Noir  : #1e1f1d;
+- Gris clair : #e8e7e1;
+* 
+*/
+
+
+/*
+**************
+*** Header ***
+**************
+*/
+
+
+.menu {
+    display: flex;
+    
+}
+
+.menu__links {
+    display: flex;
+    flex: .25;
+    margin-top: 0;
+    align-items: center;
+    list-style: none;
+}
+
+.menu__hyconiq {
+    flex: .5;
+    text-align: center;
+}
+.menu__hyconiq img {
+    object-fit: contain;
+    height: 6rem;
+}
+
+.menu__links-link {
+    text-transform: uppercase;
+    color: #1e1f1d;
+    margin-right: 1rem;
+}
+
+.menu__links img {
+    margin: 0 auto;
+}
+
+.menu__connect {
+    display: flex;
+    flex-direction: column;
+    flex: .25;
+}
+.menu__connect__login {
+    height: 50%;
+  /*  background: yellow; */
+    text-align: center;
+    border-left: 2px solid #e8e7e1;
+    border-top: 2px solid #e8e7e1;
+    border-right: 2px solid #e8e7e1;
+    
+}
+.menu__connect__login-connexion {
+    line-height: 2.5rem;
+    color: #1e1f1d;
+    text-transform: uppercase;
+}
+
+.menu__follow {
+    display: flex;
+   /* background: green; */
+    height: 50%;
+    text-align: center;
+    border: 0.5px solid #e8e7e1;
+}
+
+.menu__follow-link {
+    flex: .5;
+    border: 0.5px solid #e8e7e1;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    color: #1e1f1d;
+    text-transform: uppercase;
+}
+
+
+/*
+******************
+*** Fin Header *** 
+******************
+*/
+
+
+/*
+**************
+*** Section **
+**************
+*/
+.content, .content__contact, .content__myaccount {
+   /* padding: 3rem 0; */
+    height: 100vh;
+    padding: 5rem 4rem 0rem 4rem;
+}
+.content {
+   background: #1e1f1d;
+}
+
+.content-category {
+    padding: .5rem;
+    text-decoration: none;
+    background: white;
+    color: #1e1f1d;
+    
+}
+.content-title {
+    color: white;
+}
+.content-reader {
+    width: 100%;
+    object-fit: fill;
+    height: 55rem;
+}
+
+.content-from {
+    text-align: center;
+}
+
+.content__paragraph {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.content__paragraph-content {
+    flex: .8;
+    padding: 0rem 2rem .5rem 0rem; 
+}
+.content__paragraph__pub {
+    background: lightgrey;
+    flex: .2;  
+}
+.content__paragraph-paragraph {
+    font-size: 1.8rem;
+ 
+}
+.content__paragraph__tags-links {
+    padding: .4rem;
+    border: 1px solid black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin-right: .6rem;
+}
+.content__discord {
+    display: flex;
+    padding-top: 3rem;
+}
+.content__discord__panel {
+    flex: .8;
+    background: #738ADB;
+    height: 10rem;
+   
+}
+.content__discord__panel-image {
+    height: 10rem;
+    width: auto;
+}
+.content__discord__panel-position {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content__discord__panel-join {
+    height: 6rem;
+    flex: .3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content__discord__panel-join span:nth-child(even) {
+    background: #162634;
+    padding: 1.4rem;
+    font-weight: bold;
+}
+
+.content__pub {
+    background: lightgrey;
+    height: 17rem;
+    flex: 1;
+    margin-top: 2rem;
+}
+
+.content__other__articles-title {
+    border: 1px solid black;
+    padding: .6rem;
+    width: 18rem;
+}
+.content__other__articles-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content__other__articles-pos {
+    height: 25rem;
+    margin-bottom: 2rem;
+}
+.new__home {
+    width: 60%;
+    border: 1px solid black;
+    height: 30rem;
+    padding: 0rem 3rem 3rem 3rem;
+    margin-top: 5rem;
+}
+.new__home h1 {
+    padding-top: 1rem;
+}
+
+.new__home-img {
+    display: flex;
+    justify-content: space-between; 
+}
+.new__home-image {
+    width: 22rem;
+    height: 22rem;
+    object-fit: cover;
+}
+.new__home-div {
+    position: relative;
+    
+}
+.new__home-div p {
+    border: 1px solid black;
+}
+.new__home-div p {
+   position: absolute;
+   left: 50%;
+   top: 79%;
+   padding: 1.5rem;
+   transform: translate(-50%);
+   background: white;
+   text-transform: uppercase;
+   text-decoration: underline;
+   font-size: 1.5rem;
+   white-space: nowrap;
+}
+/*
+*******************
+*** Fin Section ***
+*******************
+*/
+
+/*
+*******************
+*** Contact *******
+*******************
+*/
+.content__contact, .content__myaccount {
+    height: 15rem;
+    background: #1e1f1d;
+}
+
+.content__contact-container {
+    text-align: center;
+    transform: translateY(-35%);
+}
+.content__contact-container h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 6rem; 
+}
+.content__contact-paragraph {
+    color: white;
+    font-size: 2rem;
+}
+
+.content__contact-fill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: yellow;
+
+}
+.content__contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__contact-nomlarge {
+    width: 47%;
+}
+.content__contact-usernamelarge {
+    width: 47%;
+}
+.content__contact-maillarge {
+    width: 97.3%;
+}
+.content__contact-objectlarge {
+    width: 97.3%;
+}
+.content__contact-joinlarge {
+    width: 97.3%;
+}
+.content__contact-form button {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+
+/*
+*******************
+*** Fin Contact ***
+*******************
+*/
+
+/*
+*******************
+*** Compte ********
+*******************
+*/
+.content__myaccount-container {
+   display: flex;
+   justify-content: space-around;
+}
+.content__myaccount-content {
+    border: 1px white solid;  
+}
+.content__myaccount-section {
+    text-align: center;
+    transform: translateY(-35%);
+}
+.content__myaccount-section h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 6rem; 
+}
+/*
+*******************
+*** Fin Compte ****
+*******************
+*/
+
+
+/*
+**************
+*** Footer ***
+**************
+*/
+
+footer {
+    height: 25rem;
+    width: 100%;
+    background: #1e1f1d;
+    margin-top: 13rem;
+    
+}
+
+.content__footer-actuality {
+    border: 1px solid white;
+    text-align: center;
+    height: 17.5rem;
+    transform: translateY(-23%);
+    background: #1e1f1d;
+}
+.content__footer-actuality h1 {
+    color: #f5fc3b;
+}
+.content__footer-actuality button {
+    margin-top: .5rem;
+    background: #f5fc3b;
+    padding: .4rem 3rem .4rem 3rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.content__footer {
+    display: flex;
+    justify-content: space-around;
+}
+.content__footer-hyconiq img {
+    object-fit: contain;
+    height: 6rem;
+}
+.content__footer-mail {
+    width: 86%;
+    padding: .4rem;
+    margin-top: .5rem;
+}
+.content__footer-username {
+    width: 41.3%;
+    padding: .4rem;
+}
+.content__footer-nom {
+    width: 41.3%;
+    padding: .4rem;
+}
+.content__footer-hyconiq, .content__footer-list {
+    margin-top: 3rem;
+}
+
+.content__footer-list ul {
+ list-style:none;
+ text-align: center;
+}
+.content__footer-list ul li {
+    margin-bottom: .4rem;
+}
+.content__footer-list ul li a{
+    color: white;
+    font-size: 1.7rem;
+    font-style: italic;
+    
+}
+
+.content__footer-actuality input::placeholder {
+    text-align: center;
+    color: black;
+    font-style: italic;
+}
+.content__footer-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+
+/*
+*******************
+*** Fin Footer ****
+*******************
+*/
+
+
