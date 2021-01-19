@@ -35,42 +35,25 @@
       <main>
         <section>
           <section>
-            <section class="content__contact">
-              <section class="content__contact-container">
-                <h1>Contact</h1>
-                <hr/>
-                <p class="content__contact-paragraph">Vous avez une question ?<br>Vous pensez nous rejoindre ?</p>
+            <section class="content__myaccount">
+              <section class="content__myaccount-section">
+                <h1>Mon compte</h1>
+                <div class="content__myaccount-container">
+                  <div class="content__myaccount-content">
+                    <h3>Mes contenus favoris</h3>
+                  </div>
+                  <div class="content__myaccount-content">
+                    <h3>Mes informations</h3>
+                  </div>
+                  <div class="content__myaccount-content">
+                    <h3>Mes messages</h3>
+                    <img src="" alt=""/>
+                  </div>
+                </div>
               </section>
               <section class="content__contact-fill">
-                <h3>Remplissez le formulaire</h3>
-                <span class="content__contact-line"></span>
-              </section>
-              <section class="content__contact-form">
-                <form method="post">
-                  <input type="text" name="nom" placeholder="Nom" class="content__contact-nomlarge"/>
-                  <input type="text" name="userame" placeholder="Prénom" class="content__contact-usernamelarge"/><br/>
-                  <input type="text" name="email" placeholder="Adresse Email" class="content__contact-maillarge"/><br/>
-                  <select name="object" class="content__contact-objectlarge">
-                    <option value="objet">Objet</option>
-                    <option value="invitation">Invitation</option>
-                    <option value="blabla">Balnabala</option>
-                    <option value="hamster">Hamster</option>
-                    <option value="parrot">Parrot</option>
-                    <option value="spider">Spider</option>
-                    <option value="goldfish">Goldfish</option>
-                  </select><br/>
-                  <input type="file" id="content__contact-fileInput">
-                  <label for="content__contact-fileInput">
-                    Ajouter une pièce jointe
-                  </label>
-                  <div class="content__contact-joinlarge">
-                    <strong>Choisir un fichier:</strong>
-                    <span id="content__contact-filename">Aucun fichier</span>
-                  </div>
-                  <textarea name="message"
-                  >Message</textarea><br/>
-                  <button type="submit">Envoyer</button>
-                </form>
+                <h3>Mes articles favoris</h3>
+                <button type="button">trier par</button>
               </section>
               <footer>
                 <section class="content__footer">
@@ -106,18 +89,5 @@
         </section>
       </main>
     </section>
-    <script>
-      /* Get File et show this file */
-      let inputFile = document.getElementById("content__contact-fileInput");
-      let fileNameField = document.getElementById("content__contact-filename");
-
-      inputFile.addEventListener("change", (e)=> {
-        let uploadedFileName = e.target.files[0].name;
-        fileNameField.textContent = uploadedFileName;
-      });
-
-      /* Disabled first child on select */
-      let selected_ = [...document.querySelectorAll("option:first-child")].map(sel => sel.disabled = true );
-    </script>
   </body>
 </html>
