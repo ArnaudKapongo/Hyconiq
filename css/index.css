@@ -43,7 +43,6 @@ font-family : 'Avenir' on element;
 
 .menu {
     display: flex;
-    
 }
 
 .menu__links {
@@ -274,7 +273,7 @@ font-family : 'Avenir' on element;
 }
 /*
 *******************
-*** Fin Section ***
+*** End Section ***
 *******************
 */
 
@@ -311,12 +310,18 @@ textarea {
     font-size: 2rem;
 }
 
-.content__contact-fill {
+.content__contact-fill, .content__account-fill {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
-.content__contact-line {
+.content__account-sort {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.content__contact-line, .content__account-line {
     background: black;
     width: 100%;
     height: .1rem;
@@ -371,31 +376,47 @@ input#content__contact-fileInput + label {
 }
 .content__contact-form button {
     left: 48%;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 3rem 1rem 3rem;
     position: absolute;
     transform: translateX(-50%);
 }
 
 /*
 *******************
-*** Fin Contact ***
+*** End Contact ***
 *******************
 */
 
 /*
 *******************
-*** Compte ********
+*** Account *******
 *******************
 */
+
 .content__myaccount-container {
    display: flex;
    justify-content: space-around;
 }
 .content__myaccount-content {
-    border: 1px white solid;  
+    border: 1px white solid;
+    display: flex;
+    background: white;
+    flex-direction: column; 
+    padding: 0 6rem 0 6rem;   
+}
+.content__myaccount-content h3 {
+    order: 2;
+    text-align: left;
+    transform: translateY(-30%);
+}
+.content__myaccount-content img  {
+    order: 1;
+    position: relative;
+    left: 125%;
+}
+.content__myaccount-star, .content__myaccount-info, .content__myaccount-message {
+    height: 2rem;
+    width: 2rem;
 }
 .content__myaccount-section {
     text-align: center;
@@ -405,10 +426,52 @@ input#content__contact-fileInput + label {
     color: white;
     text-transform: uppercase;
     letter-spacing: 6rem; 
+    font-style: italic;
+}
+
+.content__account-fav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr .5fr;
+    gap: 1em 1em;
+    background: lightgrey;
+    height: auto;
+    grid-template-areas:
+      "content__account-fav1 content__account-fav2 content__account-fav3"
+      "content__account-fav4 content__account-fav5 content__account-fav6";
+}
+.content__account-fav p {
+    font-size: 2.4rem;
+}
+.content__account-fav1 { grid-area: content__account-fav1; 
+    background:red;     
+}
+.content__account-fav2 { grid-area: content__account-fav2; 
+    background: yellow; 
+}
+.content__account-fav3 { grid-area: content__account-fav3; 
+    background: purple; 
+}
+.content__account-fav4 { grid-area: content__account-fav4; 
+    background: green; 
+}
+.content__account-fav5 { grid-area: content__account-fav5; 
+    background: blue; 
+}
+.content__account-fav6 { grid-area: content__account-fav6; 
+    background: orange; 
+}
+.content__account-line {
+    margin-bottom: 2rem;
+}
+.content__account-favImg {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
 }
 /*
 *******************
-*** Fin Compte ****
+*** End Account ***
 *******************
 */
 
@@ -424,9 +487,7 @@ footer {
     width: 100%;
     background: #1e1f1d;
     margin-top: 13rem;
-    
 }
-
 .content__footer-actuality {
     border: 1px solid white;
     text-align: center;
@@ -497,6 +558,6 @@ footer {
 
 /*
 *******************
-*** Fin Footer ****
+*** End Footer ****
 *******************
 */
