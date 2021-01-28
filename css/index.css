@@ -434,7 +434,7 @@ input#content__contact-fileInput + label {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: .5fr .5fr;
     gap: 1em 1em;
-    background: lightgrey;
+    /*background: lightgrey;*/
     height: auto;
     grid-template-areas:
       "content__account-fav1 content__account-fav2 content__account-fav3"
@@ -443,6 +443,17 @@ input#content__contact-fileInput + label {
 .content__account-fav p {
     font-size: 2.4rem;
 }
+.content__account-button {
+    background: none;
+	color: inherit;
+	border: 1px solid black;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    text-decoration: underline;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+/*
 .content__account-fav1 { grid-area: content__account-fav1; 
     background:red;     
 }
@@ -461,6 +472,7 @@ input#content__contact-fileInput + label {
 .content__account-fav6 { grid-area: content__account-fav6; 
     background: orange; 
 }
+*/
 .content__account-line {
     margin-bottom: 2rem;
 }
@@ -468,6 +480,20 @@ input#content__contact-fileInput + label {
     width: 100%;
     height: 30rem;
     object-fit: cover;
+}
+.content__account-arrow {
+    display: flex;
+    justify-content: center;
+}
+.content__account-arrowleft {
+    margin-right: 2rem !important;
+}
+.content__account-arrowleft, .content__account-arrowright {
+    width: auto;
+    height: 3rem;
+    padding: 2rem;
+    border: 1px solid black;
+    margin: 2rem 0 2rem 0;
 }
 /*
 *******************
