@@ -122,12 +122,16 @@ font-family : 'Avenir' on element;
 *** Section **
 **************
 */
-.content, .content__contact, .content__myaccount {
+.content, .content__contact, .content__myaccount, .content__homepremium {
    /* padding: 3rem 0; */
-    height: 100vh;
+    height: auto; /*height: 100vh;*/
     padding: 5rem 4rem 0rem 4rem;
 }
-.content {
+.content__container__article {
+    height: 100vh !important;
+    background: #1e1f1d;
+}
+.content__homepremium {
    background: #1e1f1d;
 }
 
@@ -135,8 +139,7 @@ font-family : 'Avenir' on element;
     padding: .5rem;
     text-decoration: none;
     background: white;
-    color: #1e1f1d;
-    
+    color: #1e1f1d; 
 }
 .content-title {
     color: white;
@@ -216,7 +219,9 @@ font-family : 'Avenir' on element;
     flex: 1;
     margin-top: 2rem;
 }
-
+.content__other__articles, .new__home-content {
+    padding-bottom: 13rem;
+}
 .content__other__articles-title {
     border: 1px solid black;
     padding: .6rem;
@@ -295,11 +300,11 @@ textarea {
     background: #1e1f1d;
 }
 
-.content__contact-container {
+.content__contact-container, .content__homepremium-container {
     text-align: center;
     transform: translateY(-35%);
 }
-.content__contact-container h1 {
+.content__contact-container h1, .content__homepremium-container h1, .content__myaccount-section h1   {
     color: white;
     text-transform: uppercase;
     letter-spacing: 6rem; 
@@ -331,6 +336,7 @@ textarea {
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
+    padding-bottom: 13rem;
 }
 .content__contact-form input, .content__contact-form textarea {
     border: 1px solid #e8e7e1; 
@@ -422,13 +428,6 @@ input#content__contact-fileInput + label {
     text-align: center;
     transform: translateY(-35%);
 }
-.content__myaccount-section h1 {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 6rem; 
-    font-style: italic;
-}
-
 .content__account-fav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -501,6 +500,133 @@ input#content__contact-fileInput + label {
 *******************
 */
 
+/*
+*******************
+**** Premium ******
+*******************
+*/
+
+.content__homepremium-content {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.content__homepremium-description {
+    height: 23rem;
+    width: 50%; 
+    z-index: 8000;  
+}
+.content__homepremium-linktitle {
+    border: 1px solid white;
+    padding: .5rem;
+    text-decoration: none;
+}
+.content__homepremium-linktitle a {
+    text-decoration: none;
+    color: white;
+}
+.content__homepremium-link {
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    border: 1px solid white;
+}
+.content__homepremium-description h1 {
+    padding: 1rem;
+    border: 1px solid white;
+    width: 105%;
+    background: white;
+    z-index: 9999;
+    margin-top: 3rem;
+}
+.content__homepremium-description p {
+    color: white;
+    margin-bottom: 4rem;
+    padding-right: 1rem;
+}
+
+.content__homepremium-img {
+    height: 40rem;
+    width: 50%;
+    background: url('https://cdn.hipwallpaper.com/i/70/18/RQU29s.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+}
+.content__other-homepremium-pos {
+    margin-right: 5rem;
+}
+.content__other-homepremium-content {
+    margin-top: 4rem;
+    display: flex;
+}
+.content__other-homepremium-description {
+    width: 25%;
+}
+.content__other-homepremium-img {
+    background:#1e1f1d;
+    width: 25%;
+}
+.content__other-homepremium-img img {
+    width: 100%;
+    height: auto;
+}
+.content__other-homepremium-button {
+    background:  #1e1f1d;
+    display: flex;
+    justify-content: space-around;
+}
+.content__homepremium-line {
+    background: white;
+    width: 94.5%;
+    height: .1rem;
+    margin-bottom: 2rem;
+}
+.content__homepremium-containerlist {
+    padding: 5rem 0 13rem 0;
+    background:  #1e1f1d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.content__homepremium-dimension {
+    height: 30rem;
+    width: 94%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content__homepremium-a  {
+    color: white;
+    font-size: 6rem;
+    text-decoration: none;
+    z-index: 9999;
+}
+.content__homepremium-music, .content__homepremium-mode, .content__homepremium-gaming  { 
+    background-repeat: no-repeat;
+    background-position-y: 15%;
+    background-size: cover;  
+    z-index: 2;
+}
+
+.content__homepremium-music {
+    background-image: url('https://cdn.hipwallpaper.com/i/70/18/RQU29s.jpg');
+}
+
+.content__homepremium-mode {
+    background-image: url('https://img-3.journaldesfemmes.fr/weFWATRTm27mcA8-qcHNAwJgfaA=/910x607/smart/ad2f7fbb096b429f8190e0b671996e4e/ccmcms-jdf/17779943.jpg');
+}
+.content__homepremium-gaming {
+    background-image: url('https://wallpapercave.com/wp/wp6967907.png');
+}
+/*
+*******************
+*** End Premium ***
+*******************
+*/
+
 
 /*
 **************
@@ -512,7 +638,7 @@ footer {
     height: 25rem;
     width: 100%;
     background: #1e1f1d;
-    margin-top: 13rem;
+   /* margin-top: 13rem; */
 }
 .content__footer-actuality {
     border: 1px solid white;
@@ -565,7 +691,7 @@ footer {
 .content__footer-list ul li {
     margin-bottom: .4rem;
 }
-.content__footer-list ul li a{
+.content__footer-list ul li a {
     color: white;
     font-size: 1.7rem;
     font-style: italic; 
