@@ -122,16 +122,15 @@ font-family : 'Avenir' on element;
 *** Section **
 **************
 */
-.content, .content__contact, .content__myaccount, .content__homepremium {
-   /* padding: 3rem 0; */
-    height: auto; /*height: 100vh;*/
+.content, .content__contact, .content__myaccount, .content__homepremium, .content__category {
+    height: auto; 
     padding: 5rem 4rem 0rem 4rem;
 }
 .content__container__article {
     height: 100vh !important;
     background: #1e1f1d;
 }
-.content__homepremium {
+.content__homepremium, .content__category {
    background: #1e1f1d;
 }
 
@@ -299,12 +298,11 @@ textarea {
     height: 15rem;
     background: #1e1f1d;
 }
-
-.content__contact-container, .content__homepremium-container {
+.content__contact-container, .content__homepremium-container, .content__category-container {
     text-align: center;
     transform: translateY(-35%);
 }
-.content__contact-container h1, .content__homepremium-container h1, .content__myaccount-section h1   {
+.content__contact-container h1, .content__homepremium-container h1, .content__myaccount-section h1, .content__category-container h1  {
     color: white;
     text-transform: uppercase;
     letter-spacing: 6rem; 
@@ -506,22 +504,22 @@ input#content__contact-fileInput + label {
 *******************
 */
 
-.content__homepremium-content {
+.content__homepremium-content, .content__category-content {
     display: flex;
     width: 100%;
     height: auto;
 }
-.content__homepremium-description {
+.content__homepremium-description, .content__category-description {
     height: 23rem;
     width: 50%; 
     z-index: 8000;  
 }
-.content__homepremium-linktitle {
+.content__homepremium-linktitle, .content__category-linktitle {
     border: 1px solid white;
     padding: .5rem;
     text-decoration: none;
 }
-.content__homepremium-linktitle a {
+.content__homepremium-linktitle a, .content__category-linktitle a {
     text-decoration: none;
     color: white;
 }
@@ -530,7 +528,7 @@ input#content__contact-fileInput + label {
     padding: 1rem 2rem 1rem 2rem;
     border: 1px solid white;
 }
-.content__homepremium-description h1 {
+.content__homepremium-description h1, .content__category-description h1 {
     padding: 1rem;
     border: 1px solid white;
     width: 105%;
@@ -538,7 +536,10 @@ input#content__contact-fileInput + label {
     z-index: 9999;
     margin-top: 3rem;
 }
-.content__homepremium-description p {
+.content__homepremium-link:last-child, .content__category-link:last-child {
+    margin-left: 2rem;
+}
+.content__homepremium-description p, .content__category-description p {
     color: white;
     margin-bottom: 4rem;
     padding-right: 1rem;
@@ -627,6 +628,150 @@ input#content__contact-fileInput + label {
 *******************
 */
 
+/*
+*******************
+**** Category *****
+*******************
+*/
+.content__category-tendances {
+    background: red;
+    height: 14rem;
+    width: 100%;
+    display: flex;
+}
+.content__category-tendances1, .content__category-tendances2, .content__category-tendances3, .content__category-tendances4, .content__category-tendances5  {
+    flex: .2.5;
+    height: 100%;
+    background: #e8e7e1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content__category {
+    height: 40rem;
+    background: #1e1f1d;
+}
+.content__category-actualarticle {
+    height: auto;
+    width: 100%;
+    padding-top: 12rem;
+}
+.content__toggle {
+    margin-top: 2rem;
+    display: flex;
+    text-align: center;
+}
+.content__toggle a {
+    flex: .35;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    background:#e8e7e1;
+}
+.content__toggle a:last-child {
+    border-right: 1px solid black;
+    background: white !important;
+}
+.content__last-articles-content {
+    display: flex;
+}
+
+.content__last-articles-img img {
+    width: 35rem;
+    height: auto;
+}
+.content__last-articles-pub {
+    background-image: url('https://www.wallpapertip.com/wmimgs/42-429915_mahatma-gandhi-jayanti-best-wishes-hd-picture-mahatma.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 100vh;
+    width: 100%;
+}
+.content__last-articles-all {
+    display: flex;
+    flex-direction: column;
+}
+.content__last-articles-articles-all {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row; 
+}
+.content__last-margin {
+    margin-left: 2rem;
+    padding-right: 4rem;
+    padding-top: .5rem;
+}
+.content__category-link a {
+    text-decoration: none;
+    color: black;
+}
+.content__category-link {
+    border: 1px solid black;
+    padding: .5rem;
+    
+}
+.content__last-arrowimg img {
+    height: auto; 
+    width: 5rem;   
+}
+.content__last-arrowimg {
+    text-align: center;
+    padding-bottom: 13rem;
+}
+.content__info-sidebar {
+    display: flex; 
+    flex-direction: row;
+}
+.content__category-general {
+    display: flex; 
+    flex-direction: column; 
+    padding-left: 2rem;
+}
+.content__category-section {
+    background:#1e1f1d; 
+    flex: .3; 
+    height:100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: white;
+}
+.content__category-description p {
+    color: black;
+    z-index: 9999;
+}
+.content__category-description h1 {
+    border: 1px solid black;
+}
+.content__category-link {
+    color: black;
+    padding: 1rem 2rem 1rem 2rem;
+    border: 1px solid black;
+}
+.content__category-title {
+    border: 1px solid white;
+    padding: .5rem;
+    background: black;
+}
+.content__category-title a {
+    text-decoration: none;
+    color: white;
+}
+.content__category-big-article-title {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+}
+/*
+*******************
+**** End Category *
+*******************
+*/
 
 /*
 **************
@@ -638,7 +783,6 @@ footer {
     height: 25rem;
     width: 100%;
     background: #1e1f1d;
-   /* margin-top: 13rem; */
 }
 .content__footer-actuality {
     border: 1px solid white;
