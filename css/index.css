@@ -122,7 +122,7 @@ font-family : 'Avenir' on element;
 *** Section **
 **************
 */
-.content, .content__contact, .content__myaccount, .content__homepremium, .content__category {
+.content, .content__contact, .content__myaccount, .content__homepremium, .content__category, .content__home {
     height: auto; 
     padding: 5rem 4rem 0rem 4rem;
 }
@@ -130,7 +130,7 @@ font-family : 'Avenir' on element;
     height: 100vh !important;
     background: #1e1f1d;
 }
-.content__homepremium, .content__category {
+.content__homepremium, .content__category, .content__home {
    background: #1e1f1d;
 }
 
@@ -298,11 +298,11 @@ textarea {
     height: 15rem;
     background: #1e1f1d;
 }
-.content__contact-container, .content__homepremium-container, .content__category-container {
+.content__contact-container, .content__homepremium-container, .content__category-container, .content__home-container {
     text-align: center;
     transform: translateY(-35%);
 }
-.content__contact-container h1, .content__homepremium-container h1, .content__myaccount-section h1, .content__category-container h1  {
+.content__contact-container h1, .content__homepremium-container h1, .content__myaccount-section h1, .content__category-container h1, .content__home-container h1  {
     color: white;
     text-transform: uppercase;
     letter-spacing: 6rem; 
@@ -504,7 +504,7 @@ input#content__contact-fileInput + label {
 *******************
 */
 
-.content__homepremium-content, .content__category-content {
+.content__homepremium-content, .content__category-content, .content__home-content {
     display: flex;
     width: 100%;
     height: auto;
@@ -633,8 +633,7 @@ input#content__contact-fileInput + label {
 **** Category *****
 *******************
 */
-.content__category-tendances {
-    background: red;
+.content__category-tendances,  .content__home-tendances {
     height: 14rem;
     width: 100%;
     display: flex;
@@ -772,6 +771,30 @@ input#content__contact-fileInput + label {
 **** End Category *
 *******************
 */
+
+/*
+*******************
+**** Home *********
+*******************
+*/
+.content__home-tendances1, .content__home-tendances2, .content__home-tendances3, .content__home-tendances4, .content__home-tendances5  {
+    flex: .2.5;
+    height: 100%;
+    justify-content: center;
+}
+.content__home-tendances1 {
+    background: red;
+}
+.yu {
+    height: 5rem;
+    background: green;
+}
+/*
+*******************
+**** End Home *****
+*******************
+*/
+
 
 /*
 **************
