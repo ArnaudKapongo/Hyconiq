@@ -509,7 +509,7 @@ input#content__contact-fileInput + label {
     width: 100%;
     height: auto;
 }
-.content__homepremium-description, .content__category-description {
+.content__homepremium-description, .content__category-description, .content__home-description {
     height: 23rem;
     width: 50%; 
     z-index: 8000;  
@@ -528,7 +528,7 @@ input#content__contact-fileInput + label {
     padding: 1rem 2rem 1rem 2rem;
     border: 1px solid white;
 }
-.content__homepremium-description h1, .content__category-description h1 {
+.content__homepremium-description h1, .content__category-description h1, .content__home-description h1 {
     padding: 1rem;
     border: 1px solid white;
     width: 105%;
@@ -536,10 +536,10 @@ input#content__contact-fileInput + label {
     z-index: 9999;
     margin-top: 3rem;
 }
-.content__homepremium-link:last-child, .content__category-link:last-child {
+.content__homepremium-link:last-child, .content__category-link:last-child, .content__home-link:last-child {
     margin-left: 2rem;
 }
-.content__homepremium-description p, .content__category-description p {
+.content__homepremium-description p, .content__category-description p, .content__home-description p {
     color: white;
     margin-bottom: 4rem;
     padding-right: 1rem;
@@ -554,21 +554,20 @@ input#content__contact-fileInput + label {
     background-size: cover;
     z-index: 2;
 }
-.content__other-homepremium-pos {
+.content__other-homepremium-pos, .content__other-home-pos {
     margin-right: 5rem;
 }
-.content__other-homepremium-content {
+.content__other-homepremium-content, .content__other-home-content {
     margin-top: 4rem;
     display: flex;
 }
-.content__other-homepremium-description {
+.content__other-homepremium-description, .content__other-home-description, .content__other-homepremium-img, .content__other-home-img {
     width: 25%;
 }
 .content__other-homepremium-img {
     background:#1e1f1d;
-    width: 25%;
 }
-.content__other-homepremium-img img {
+.content__other-homepremium-img img, .content__other-home-img img {
     width: 100%;
     height: auto;
 }
@@ -650,7 +649,7 @@ input#content__contact-fileInput + label {
     height: 40rem;
     background: #1e1f1d;
 }
-.content__category-actualarticle {
+.content__category-actualarticle, .content__home-actualarticle {
     height: auto;
     width: 100%;
     padding-top: 12rem;
@@ -710,10 +709,9 @@ input#content__contact-fileInput + label {
     text-decoration: none;
     color: black;
 }
-.content__category-link {
+.content__category-link, .content__home-link {
     border: 1px solid black;
-    padding: .5rem;
-    
+    padding: .5rem; 
 }
 .content__last-arrowimg img {
     height: auto; 
@@ -741,24 +739,24 @@ input#content__contact-fileInput + label {
     align-items: center;
     color: white;
 }
-.content__category-description p {
+.content__category-description p, .content__home-description p {
     color: black;
     z-index: 9999;
 }
-.content__category-description h1 {
+.content__category-description h1, .content__home-description h1 {
     border: 1px solid black;
 }
-.content__category-link {
+.content__category-link, .content__home-link {
     color: black;
     padding: 1rem 2rem 1rem 2rem;
     border: 1px solid black;
 }
-.content__category-title {
+.content__category-title, .content__home-title {
     border: 1px solid white;
     padding: .5rem;
     background: black;
 }
-.content__category-title a {
+.content__category-title a, .content__home-title a {
     text-decoration: none;
     color: white;
 }
@@ -777,18 +775,57 @@ input#content__contact-fileInput + label {
 **** Home *********
 *******************
 */
+.content__home {
+    height: 36rem;
+}
+.content__home-tendances p {
+    color: white;
+}
 .content__home-tendances1, .content__home-tendances2, .content__home-tendances3, .content__home-tendances4, .content__home-tendances5  {
     flex: .2.5;
-    height: 100%;
+    height: auto;
     justify-content: center;
+    text-align: center;
 }
-.content__home-tendances1 {
+.content__home-tendances1 img, .content__home-tendances2 img, .content__home-tendances3 img, .content__home-tendances4 img, .content__home-tendances4 img, .content__home-tendances5 img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.content__home-subscribe {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+.content__home-subscribe button {
+    padding: .5rem 3rem .5rem 3rem;
     background: red;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
 }
-.yu {
-    height: 5rem;
-    background: green;
+.content__home-newpos {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
+.content__other-home-img {
+    background: white;
+}
+.content__other-home-button {
+    background:  white;
+    display: flex;
+    justify-content: space-around;
+}
+
 /*
 *******************
 **** End Home *****
