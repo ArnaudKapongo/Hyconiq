@@ -402,7 +402,7 @@ input#content__contact-fileInput + label {
    justify-content: space-around;
 }
 .content__myaccount-content {
-    border: 1px white solid;
+    border: 1px #1e1f1d solid;
     display: flex;
     background: white;
     flex-direction: column; 
@@ -917,3 +917,89 @@ footer {
 *** End Footer ****
 *******************
 */
+
+/*
+*******************
+*** Media Queries for Smartphone & Tablette (Modifications générale, je ferai un breakpoint pour ajuster les width pour smartphone plus tard) ****
+*******************
+*/
+
+
+/*
+*******************
+*** My Account ****
+*******************
+*/
+
+@media all and (max-width: 900px) {
+
+    .content__myaccount {
+        height: 30rem;
+    }
+
+    .content__myaccount-section h1 {
+        margin-top: 7rem;
+        font-size: 2rem;
+        letter-spacing: 4rem;
+    }
+
+    .content__myaccount-container {
+        flex-wrap: wrap;
+        width: 75%;
+        margin: auto;
+    }
+
+    .content__myaccount-content {
+        border: 1px solid white;
+        background: #1e1f1d;
+        color: white;
+        padding: 0 1rem 0 1rem;
+        width: 40%;
+        margin-top: 2rem;
+    }
+
+    .content__myaccount-content img {
+        left: 90%;
+    }
+
+    .content__account-sort h3 {
+        text-transform: uppercase;
+        font-style: italic;
+    }
+
+    .content__account-button {
+        display: none;
+    }
+
+    .content__account-fav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content__account-fav p {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+
+    .content__account-favImg {
+        height: 15rem;
+    }
+
+    .content__account-arrowright, .content__account-arrowleft {
+        width: 50%;
+    }
+/*
+*******************
+*** End My Account ****
+*******************
+*/
+
+
+/*
+*******************
+*** Category ******
+*******************
+*/
+
+}
